@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  blackjack:
+    build: .
+    volumes:
+      - ..:/app
+    networks:
+      - blackjack
+networks:
+  blackjack:
+    driver: bridge
